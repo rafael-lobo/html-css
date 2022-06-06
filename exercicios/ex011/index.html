@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Abra o site em varios dispositivos <strong>diferentes</strong>.</p>
+    <picture>
+        <source media="(max-width: 705px)" srcset="imagens/foto-p.jpeg" type="image/jpeg"> 
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.jpeg" type="image/jpeg">
+        <img src="imagens/foto-g.jpeg" alt="Imagem Dinamica">
+    </picture>
+
+    <h1>Audio</h1>
+    <p>Reproduzindo um audio</p>
+    <audio src="midias/musica.mp3" controls></audio>
+
+    <h1>Videos hospedados localmente</h1>
+    <p>Vídeo hospedado no meu servidor</p>
+    <video src="midias/video.mp4" poster="imagens/foto-g.jpeg" width="600" controls loop></video>
+</body>
+</html>

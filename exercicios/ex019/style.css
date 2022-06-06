@@ -1,0 +1,85 @@
+@charset "UFT-8";
+
+/* 
+id="name" (HTML)    = #name (CSS) 
+class="name" (HTML) = .name (CSS) 
+*/
+
+/*
+
+#   = id
+.   = class
+:   = pseudo-class
+::  = pseudo-element
+>   = children
+
+*/
+
+body{
+    background-color: #F7CACD;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#principal{
+    background-color: #DE4D86;
+    color: #64113F;
+    text-align: center;
+}
+
+h1{
+    color: #84E6F8;
+    background-color:#64113F;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.basico{
+    color: rgb(12, 109, 1);
+}
+
+.intermediario{
+    color: rgb(109, 109, 1);
+}
+
+.avancado{
+    color: rgb(109, 1, 1);
+}
+
+.destaque{
+    background-color: rgba(255, 255, 0, 0.415);
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+/*----------------------*/
+div{
+    width: fit-content;
+    font-weight: bolder;
+    background-color: #84E6F8;
+}
+
+div > p{        /* O p QUE ESTÁ DENTRO DA div */
+    display: none;
+}
+
+div:hover > p{  /* O p QUE ESTÁ DENTRO DA div QUANDO PASSAMOS O MOUSE POR CIMA DA div*/
+    display: block;
+    background-color: aqua;
+}
+
+div:hover{      /* A div QUANDO PASSAMOS O MOUSE POR CIMA DA div */
+    color: #DE4D86;
+}
+
+div::after{
+    content: " after";
+}
+
+div:active{
+    color: yellow;
+}
+/*----------------------*/
