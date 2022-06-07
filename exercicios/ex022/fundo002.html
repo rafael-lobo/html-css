@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização dos fundos</title>
+    <style>
+        body{
+            background-image: url(imagens/wallpaper001.jpg);
+            height: 100cv;
+        }
+
+        .quadrado{
+            margin-bottom: 50px;
+            height: 200px;
+            width: 77%;
+            border-radius: 10px;
+            background-image: url(imagens/wallpaper003.jpg);
+            background-repeat: no-repeat;
+        }
+
+        #q1{
+            background-position: left top;
+        }
+
+        #q2{
+            background-position: right bottom;
+        }
+
+        #q3{
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div  class="quadrado" id="q3"></div>
+</body>

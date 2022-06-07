@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizando verticalmente</title>
+    <style>
+        .container{
+            position: relative;  /* REDUNDANTE */
+            background-color: aqua;
+            background-size: 100% 100%;
+            height: 98vh;
+        }
+
+        .conteudo{
+            background-color: brown;
+            height: 300px;
+            width: 300px;
+            position: absolute; /* VAI "DESBLOQUEAR" O left E O top */
+            left: 50%;
+            top: 50%;
+            /* PARA MUDAR A POSICAO DA REFERENCIA: translate */
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
