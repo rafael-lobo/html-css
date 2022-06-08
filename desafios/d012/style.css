@@ -6,13 +6,16 @@
     padding: 0px;
 }
 
+html, body{
+    min-height: 100vh;
+}
+
 header{
     background-color: black;
-    min-height: 20vh;
     color: white;
     font-family: sans-serif;
     font-weight: lighter;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 a{
@@ -23,17 +26,23 @@ a{
 
 a:hover{
     text-decoration: underline;
-    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.625);
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.786);
+    transition-duration: 0.3s;
 }
 
 header h1, p{
     text-align: center;
-    font-size: 15px;
 }
 
 header h1{
+    padding-top: 50px;
     font-family: 'Passion One', cursive;
-    font-size: 70px;
+    font-size: 9vw;
+    font-variant: small-caps;
+}
+
+header p{
+    padding-bottom: 50px;
 }
 
 main{
@@ -42,28 +51,31 @@ main{
 
 main .white-background{
     background-color: white;
-    min-height: fit-content;
-    padding: 30px;
+}
+
+main section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 4.5vw;
+    padding-left: 30px;
+    text-align: left;
 }
 
 main pre{
     font-family: 'Sriracha', cursive;
-    font-size: 30px;
+    font-size: 3vw;
+    padding: 30px;
+    display: inline-block;
 }
 
 main .image-background{
     color: white;
-    min-height: fit-content;
+    text-shadow: 1px 1px 0px black;
+    box-shadow: inset 0px 6px 10px rgba(0, 0, 0, 0.409);
 }
 
 main .image-background > pre{
-    background-color: rgba(0, 0, 0, 0.250);
-    text-align: left;
-    padding: 30px;
-}
-
-pre{
-    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.350);
 }
 
 main .flor{
@@ -82,4 +94,7 @@ footer p{
     padding: 10px;
     color: white;
     text-align: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
 }
