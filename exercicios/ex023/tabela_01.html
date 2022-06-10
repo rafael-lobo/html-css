@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 1000px;
+            vertical-align: middle;
+            text-align: center;
+            height: 500px;
+            margin: auto;
+        }
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        tbody > tr:nth-child(even){
+            background-color: rgba(128, 128, 128, 0.473);
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgba(255, 0, 0, 0.48);
+        }
+        .col2{
+            background-color: blueviolet;
+        }
+        .col3{
+            background-color: aquamarine;
+        }
+        #container{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="col1">
+                <col class="col2">
+                <col class="col3" span="3">
+            </colgroup>
+            <caption>Legenda</caption>
+            <thead>
+                <tr>
+                    <th scope="col">A1</th>
+                    <th scope="col">B1</th>
+                    <th scope="col">C1</th>
+                    <th scope="col">D1</th>
+                    <th scope="col">E1</th>
+                    <th scope="col">F1</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="linha">
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+                <tr>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+                <tr class="linha">
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+                <tr>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">A4</th>
+                    <td class="dado">B4</td>
+                    <td>C4</td>
+                    <td>C4</td>
+                    <td colspan="2">C4</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repudiandae qui neque accusantium vitae animi iusto delectus optio minus quas? Expedita aperiam fuga aliquam. Vitae temporibus consequuntur tempora earum quasi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus possimus nam, sed asperiores non corporis sapiente harum, molestiae laboriosam impedit sequi saepe voluptates quo nihil soluta quis nostrum deleniti nemo!Lorem
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non temporibus dicta aspernatur error consequuntur nobis molestiae quasi vero aperiam, soluta quas tenetur, id omnis quis nesciunt facere eos? Laboriosam, ad?</p>
+</body>
+</html>
